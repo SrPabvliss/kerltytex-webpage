@@ -1,0 +1,103 @@
+---
+// src/components/Gallery.astro
+---
+
+<section class="gallery-section">
+	<div class="gallery">
+		<div
+			class="gallery-item follow-us"
+			data-aos="zoom-in"
+			data-aos-duration="800"
+		>
+			<div class="follow-text">
+				<p>Síguenos!</p>
+				<p class="handle">@splash</p>
+			</div>
+		</div>
+		<div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+			<img
+				src="https://image.made-in-china.com/202f0j00BeFGadMWrHch/Waterproof-Raincoat-for-Kids-Rain-Coat-Children-Korea-Style-Rain.webp"
+				alt="Niño jugando en la lluvia con impermeable verde"
+			/>
+		</div>
+		<div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+			<img
+				src="https://image.made-in-china.com/202f0j00RiqzUVLcvNuG/Waterproof-Raincoat-for-Kids-Rain-Coat-Children-Korea-Style-Rain.webp"
+				alt="Niño con impermeable amarillo en charco"
+			/>
+		</div>
+		<div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+			<img
+				src="https://image.made-in-china.com/226f3j00QAIEymdgfMca/Impermeable-impermeable-impermeable-impermeable-impermeable-para-ni-os-lluvia-estilo-de-Corea-ni-os.webp"
+				alt="Impermeable negro"
+			/>
+		</div>
+		<div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+			<img
+				src="https://image.made-in-china.com/202f0j00bvokGKTcnMqL/Outdoor-Waterproof-Clothing-with-Cute-Pattern-Rain-Jacket-Raincoat-for-Kid.webp"
+				alt="Impermeable rosa"
+			/>
+		</div>
+		<div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+			<img
+				src="https://image.made-in-china.com/202f0j00nickhrfqCYoM/EVA-Raincoat-for-Kids-Children-with-Cheapest-Price-as-Promotion-Gift-Disposable-Raincoat-Plastic-Raincoat.webp"
+				alt="Logo Splash"
+			/>
+		</div>
+	</div>
+</section>
+
+<style>
+	.gallery-section {
+		background-color: #f2f5fa;
+		padding: 4rem 0;
+	}
+
+	.gallery {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 1rem;
+		padding: 0 1rem;
+	}
+
+	.gallery-item {
+		aspect-ratio: 1;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	.gallery-item img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.follow-us {
+		background-color: #e3f1fb;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.follow-text {
+		color: #36a8df;
+	}
+
+	.follow-text p {
+		margin: 0;
+		font-size: 1.2rem;
+	}
+
+	.handle {
+		font-weight: bold;
+	}
+
+	@media (max-width: 768px) {
+		.gallery {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+</style>

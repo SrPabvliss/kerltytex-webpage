@@ -1,0 +1,47 @@
+---
+// src/components/Banner.astro
+---
+
+<section class="section">
+	<div class="banner" data-aos="fade-in" data-aos-duration="1000">
+		<div class="container">
+			<h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+				Con los impermeables de Splash, los días de<br />
+				lluvia son una aventura
+			</h2>
+		</div>
+	</div>
+</section>
+
+<style>
+	section {
+		background-color: #f2f5fa;
+		padding: 4rem 2rem;
+	}
+
+	.banner {
+		background-color: #36a8df;
+		border-radius: 20px;
+		margin: 2rem auto;
+		max-width: 1200px;
+		padding: 3rem 2rem;
+	}
+
+	.container {
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	h2 {
+		color: #ffffff;
+		font-size: 2rem;
+		line-height: 1.4;
+		font-weight: 500;
+	}
+
+	@media (max-width: 768px) {
+		h2 {
+			font-size: 1.5rem;
+		}
+	}
+</style>
